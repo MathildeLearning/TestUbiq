@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Test Ubiq</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Tables -->
+    <link href="css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- top menu -->
+        <div class="dropdown">
+            <div class="btn btn-secondary dropdown-toggle" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Bienvenue <strong>Boris Malezyk</strong> <span><i class="fa fa-building-o "></i></span>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                <ul>
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="fa fa-gears "></i> Paramètres</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="fa fa-share "></i> Réseaux sociaux</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Se déconnecter <i class="fa fa-power-off "></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- sidenav - menu de gauche -->
+        <nav>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="#"> 
+                            UTILISATEURS<i class="fa arrow"></i><i class="fa fa-sitemap"></i>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">Gestion des utilisateurs<i class="fa fa-tags"></i></a>
+                        
+                    </li>
+                    <li class="d-flex space-between">
+                        <a href="#"> Gestion des sociétés <i class="fa fa-map-marker"></i> </a>
+                        
+                    </li>
+                </ul>
+                <!-- /#side-menu -->
+            </div>
+            <!-- /.sidebar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+            <!-- breadcrum navigation -->
+            <nav class="breadcrum">
+                <a class="breadcrum-item" href="#"> <i class="fa fa-sitemap"></i> UTILISATEURS <i class="fa  fa-chevron-right"></i> </a>
+                <a class="breadcrum-item active" href="#"> <i class="fa fa-map-marker"></i> LISTE </a>
+            </nav>
+
+            <!--  -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        <button type="button" class="btn btn-default"><i class="fa fa-play-circle-o"></i> Actif <i class="fa fa-caret-down"></i> </button>
+                        <button type="button" class="btn btn-primary"> <i class="fa fa-filter"></i> Filter </button>
+                        <button type="button" class="btn btn-default"> <i class="fa fa-cloud-download "></i> </button>
+                        <button type="button" class="btn btn-warning"> <i class="fa fa-plus"></i> </button>
+                    </h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th><strong>ID</strong></th>
+                                            <th><strong>Pseudo</strong></th>
+                                            <th><strong>Statut</strong></th>
+                                            <th><strong>Connexion</strong></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                            <td>1836</td>
+                                            <td>Test Paris</td>
+                                            <td><i class="fa fa-play-circle-o"></i></td>
+                                            <td class="center">0</td>
+                                            <td class="right"> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> </td>
+                                        </tr>
+                                        <tr class="even gradeC">
+                                            <td>1837</td>
+                                            <td>Test Marseille</td>
+                                            <td><i class="fa fa-play-circle-o"></i></td>
+                                            <td class="center">0</td>
+                                            <td class="right"> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> </td>
+                                        </tr>
+                                        <tr class="odd gradeA">
+                                            <td>1838</td>
+                                            <td>Test Ornans</td>
+                                            <td><i class="fa fa-play-circle-o"></i></td>
+                                            <td class="center">4</td>
+                                            <td class="right"> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> </td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                            <td>1839</td>
+                                            <td>Test Colombes</td>
+                                            <td><i class="fa fa-play-circle-o"></i></td>
+                                            <td class="center">0</td>
+                                            <td class="right"> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> </td>
+                                        </tr>
+                                        <tr class="odd gradeA">
+                                            <td>1840</td>
+                                            <td>Test Aix</td>
+                                            <td><i class="fa fa-play-circle-o"></i></td>
+                                            <td class="center">0</td>
+                                            <td class="right"> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <footer>
+        <p><span>Copyright 2018 - test Ubiq - Mentions Légales | Version beta</span><span><i class="fa fa-twitter"></i> #GETLOCALSUCCESS</span></p>
+    </footer>
+
+    <!-- Core Scripts - Include with every page -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- Page-Level Plugin Scripts - Tables -->
+    <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="js/sb-admin.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+    });
+    </script>
+
+
+</body>
+
+</html>

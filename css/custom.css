@@ -1,0 +1,125 @@
+/* fond du site */
+body {
+	padding-top: 80px; /* padding-top égale à la taille du menu de haut*/
+	background-color: #3FA5D9;
+	font-family: Helvetica,Arial,sans-serif; /* définition du choix de la police*/
+}
+
+/* fond principal #wrapper */
+#wrapper {
+	background-color: #fff;
+    font-size: 1.25rem; /* définition de la taille des fontes de la page*/
+}
+
+/* fond proncipal et corps de page - #page-wrapper */
+#page-wrapper {
+	margin-left: 8rem; /* marge gauche pour ajuster au menu replié*/
+}
+
+/*menu du haut - dropdown*/
+#dropdownMenu {
+	font-size: 1.25rem; /* surchage du stype par défault de boostrap pour les dropdown Menu */
+}
+
+.dropdown {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 8rem;
+	height:80px;
+	padding: 4rem 2rem 0 0;
+	background-color: #fff;
+	vertical-align: text-bottom;
+	text-align: right;
+	z-index: 200; /* Ramener le menu au premier plan*/
+}
+
+/* stylisation de l'icone du menu*/
+.dropdown span {
+	display: inline-block;
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+	padding-top: 2px;
+	background-color: #f0ad4e;
+	vertical-align: middle;
+	color: #fff;
+}
+
+/*style du menu déroulé*/
+.dropdown-menu {
+	position: absolute;
+	left: unset !important; /* surcharge de bootstrap.min */
+	right: 0 !important;
+	float: right !important;
+	margin-top: 0;
+	padding: 0;
+	width: 20rem;
+    text-align: left !important;
+	text-decoration: none; 
+	z-index: 200; /* Ramener le menu au premier plan*/
+}
+
+
+.dropdown-menu ul {
+	width:100%;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.dropdown-menu li {
+	width:100%;
+	padding: 2rem 4rem;
+	list-style-type: none;
+}
+
+.dropdown-menu li:hover {
+	background-color: #F0F0F0;
+}
+
+/*style du menu déroulé lorsqu'il est ouvert */
+open>.dropdown-menu {
+	position: absolute;
+	right: 0 !important;
+	float: right !important;
+}
+
+/* barre de suivi de navigation */
+.breadcrum {
+	margin: 0 -3rem;
+	padding: 2rem;
+	background-color: #E5E8E9;
+}
+
+/* Menu de gauche*/
+.sidebar-collapse {
+ 	position: absolute; /* Position relative à la fenêtre de navigation */
+    left: -20rem; /* Position quasi hors écran */
+    transition: 0.3s; /* temps de transition au hover */
+    width: 28rem; /* largeur du menu de gauche */
+    min-height: 100vh; /* hauteur du menu*/
+    padding: 2rem; /* 15px padding */
+    text-decoration: none; /* Remove underline */
+    background-color: #fff; 
+    z-index: 200; /* Ramener le menu au premier plan*/
+}
+
+#side-menu li a {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sidebar-collapse:hover {
+	left: 0; /* Au survol de la souris, faire apparaitre le menu en entier */
+}
+
+/* footer*/
+footer {
+	background-color: #F5F5F5;
+}
+
+footer p {
+	display: flex;
+	height:8rem;
+	justify-content: space-around;
+}
